@@ -1,0 +1,185 @@
+<html>
+<head>
+	<title>My Book</title>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<body bgcolor="pink">
+    <p>
+    	<center>
+    	<ul style="list-style-type: none;  padding: 0;">
+        <li style="display: inline; background-color:pink; margin-right: 10px"><a href="./home.html">HOME</a></li>
+        <li style="display: inline; background-color:pink; margin-right: 10px"><a href="./about.html">ABOUT</a></li>
+        <li style="display: inline; background-color:pink; margin-right: 10px"><a href="./contact.html">CONTACT</a></li>
+        <li style="display: inline; background-color:pink; margin-right: 10px"><a href="./services.html">SERVICES</a></li>
+        <li style="display: inline; background-color:pink; margin-right: 10px"><a href="./form.html">FORM</a></li>
+        <li style="display: inline; background-color:pink; margin-right: 10px"><a href="./table.html">TABLE</a></li>
+        <li style="display: inline; background-color:pink; margin-right: 10px"><a href="./book.html">MYBOOK</a></li>
+    </ul></center>
+
+
+	</p>
+	<h1>SEEDs MANAGEMENT SYSTEM</h1>
+	<ol><h2><u><li>DATABASE</li></u></h2>
+
+		<p>Database name used: <b>SEEDs MANAGEMENT SYSTEM.</b></p>
+		<ul type="square"><h3><u><i><li>Tables</li></i></u></h3>
+
+			<ol><li><b>Admin Table</b></li>
+
+			<p>Admin table This is table that will be only created by admin and will hold other system users apart from admin  will give them email and password that they will use to login and access the project or system, and also used to register if she/he don’t have an account so once you must to create account in order to login and access or use the system.
+            Note: the created Admin will not have same ability and right in the system.</p></br>
+
+			<li><b>farmer Table</b></li>
+
+			<p>This table represents the users of the system who place orders/and buy the seeds product. The farmer table typically includes the following details: farmer ID, Fname, Lname, phone, email, district, sector, cell, village. This is a table that will be only created by admin, the email and password of customer will be used to login in the system if no they will no longer get access to system. </p> </br>
+
+
+			<li><b>seeds Table</b></li>
+
+			<p>This table represents the products that are available for sell /purchase on the system. The seeds table typically includes the following details: seed ID, seed name, product Grade, price_per_unity, Mfg_date, Exp-date.the products will be put by the vendor or admin into the system and every operation will be made by them like deleting, add, updating,and update.</p></br>
+
+            <li><b>Payment Table</b></li>
+
+			<p> This table represents the payment information for an order that was placed. The payment table typically includes the following details: payment_id, payment date, payment amount, payment method, order, payment status, customer_id,phone.The payment  is made by a customer who liked a kind of product after browsing in system.</p></br>
+
+			<li><b>empoyee Table</b></li>
+
+			<p>This table represents the businesses that supply the products to the system. The employee table typically includes the following information: employee ID, fname, lname, phone, vemail, district, sector, cell, village, username, password. employee will put a username and password he wants during signing up or to create a new account and will always use it in loging into a system any time. employee is the one who will be putting the items or the products in the system similarly admin. there are only ones who have the ability to delete, create, update, insert the data. </p></br>
+
+			
+			              <h3><u><i><li>Attributes</li></i></u></h3>
+			               <b>Attributes of Admin Table</b></br>
+    Here are the descriptions or purposes of the attributes/columns used in Admin table:</br>
+
+    <p><b><i>id (int)primary key:</i></b> The columns which represents unique identifier of admin.</br></p> 
+    <p><b><i>fname(varchar):</i></b> The columns which  represents first name of admin.</br></p> 
+    <p><b><i>lname(varchar):</i></b> The columns which  represents last  of name admin.</br></p> 
+
+    <p><b><i>phone(varchar):</i></b> The column which  represents telephone number of admin.</br></p>
+
+    <p><b><i>email(varchar):</i></b> The column which  represents or store email of admin.</br></p> 
+
+    <p><b><i>username(varchar):</i></b> The column which  represents   of user name admin must have as uniqueness</br></p>  
+
+    <p><b><i>password(varchar):</i></b> The column which  represents password of user.</br></p>
+
+
+   <h3><u><i><li>Attributes</li></i></u></h3>
+			               <b>Attributes of farmer Table</b></br>
+    Here are the descriptions or purposes of the attributes/columns used in customer table:</br>
+
+    <p><b><i>cid int primary key:</i></b> The columns which represents id of usercustomer.</br></p> 
+    <p><b><i>fname(varchar):</i></b> The columns which  represents first name of customer.</br></p> 
+    <p><b><i>lname(varchar):</i></b> The columns which  represents last name .</br></p> 
+
+    <p><b><i>phone(varchar):</i></b> The column which  represents telephone number that you contact anytime for a given reason.</br></p>
+
+    <p><b><i>email(varchar):</i></b> The column which  represents or store email .</br></p> 
+
+    <p><b><i>district:</i></b> The column which  represents the address like district of customer</br></p>  
+
+    <p><b><i>sector(varchar):</i></b> The column which  represent customer sector .</br></p>
+    <p><b><i>cell(varchar):</i></b> The column which  represents customer cell.</br></p> 
+
+    <p><b><i>village(varchar):</i></b> The column which  represents customer village</br></p>  
+
+    <p><b><i>username(varchar):</i></b> The column which  represents customer username.</br></p>
+    <p><b><i>password(varchar):</i></b> The column which  represents customer password.</br></p>
+
+
+
+
+   <h3><u><i><li>Attributes</li></i></u></h3>
+			               <b>Attributes of seeds Table</b></br>
+    Here are the descriptions or purposes of the attributes/columns used in Admin table:</br>
+
+    <p><b><i>pid (int)primary key:</i></b> The columns which represents product id.</br></p> 
+    <p><b><i>pname(varchar):</i></b> The columns which  represents product name.</br></p> 
+    <p><b><i>pgrade(int):</i></b> The columns which  represents product grade if is 1 or 3 it depend on quality.</br></p> 
+
+    <p><b><i>price_per_unity(float):</i></b> The column which  represents product cost per each unity.</br></p>
+
+    <p><b><i>mfg_date(date):</i></b> The column which  represents or store the dates on which it was made.</br></p> 
+
+    <p><b><i>exp_date(date):</i></b> The column which  represents   the dates on which it will expires</br></p> 
+
+  <h3><u><i><li>Attributes</li></i></u></h3>
+			               <b>Attributes of payment Table</b></br>
+    Here are the descriptions or purposes of the attributes/columns used in payment table:</br>
+
+    <p><b><i>payid (int) primary key:</i></b> The columns which represents id of payment that was made .</br></p> 
+    <p><b><i>paydate(date):</i></b> The columns which  represents the date of payment.</br></p> 
+    <p><b><i>pamount(int):</i></b> The columns which  represents amount money or price the product was paid.</br></p> 
+
+    <p><b><i>pmethod(varchar):</i></b> The column which  represents the method of payment if is mtn or airtel or bk...end so on.</br></p>
+
+    <p><b><i>orid (int)foreign key:</i></b> The column which  represents number of oder that was made as an id of order forign key in payment .</br></p> 
+
+    <p><b><i>pay_status(varchar):</i></b> The column which  represents status of payment if money  was paid ,received,or pending</br></p>  
+
+    <p><b><i>cid (int) foreign key:</i></b> The column which  represents id a number as a foreign key or a number of a customer  who made payment</br></p>
+    <p><b><i>phone (varchar):</i></b> The column which  represents phone of that customer who made payment</br></p>
+
+
+    <h3><u><i><li>Attributes</li></i></u></h3>
+			               <b>Attributes of employee Table</b></br>
+    Here are the descriptions or purposes of the attributes/columns used in vendor table:</br>
+
+    <p><b><i>vid (int) primary key:</i></b> The columns which represents id of a seller or employee .</br></p> 
+    <p><b><i>vfirstname(varchar):</i></b> The columns which  represents firstname.</br></p> 
+    <p><b><i>vlastname(varchar):</i></b> The columns which  represents lastname.</br></p> 
+
+    <p><b><i>phone(varchar):</i></b> The column which  represents phone.</br></p>
+
+    <p><b><i>vemail(varchar):</i></b> The column which  represents email .</br></p> 
+
+    <p><b><i>district(varchar):</i></b> The column which  represents address as district.</br></p>  
+
+    <p><b><i>sector(varchar):</i></b> The column which  represents sector.</br></p>
+    <p><b><i>cell(varchar):</i></b> The column which  represents cell</br></p>
+     <p><b><i>village(varchar):</i></b> The column which  represents village</br></p>
+      <p><b><i>username(varchar):</i></b> The column which  represents username</br></p>
+       <p><b><i>password(varchar):</i></b> The column which  represents password</br><p> 
+
+
+    
+</ul>
+        <h2><u><li>JAVA PROGRAMING</li></u></h2>
+        
+        <ul type="square">
+            <ol><h3><li><i><b>INTRODUCTION</b></li></i></u></h3>
+
+<P><h3>In this chapter I will be describing how powerful general purpose programming language was used to create the analyzed system. Under this chapter I will undergo full detail of how everything will function together with database that have been describe above and how it cope with full analyzed system <P>
+<P>Eclipse IDE: an integrated development environment used in computer programming. It contains a base workspace and an extensible plug-in system for customizing the environment. It is the second-most-popular IDE for Java development, and, until 2016, was the most popular. <h3><P>
+
+
+                          <h3><u><i><li>Forms and Images</li></i></u></h3>
+        </ul>
+        
+                   <h3>   <center>  <ol><b>ADMIN</b></li></center> 
+                        <p>Admin in role involves overseeing various tasks related to seed management 
+The admin typically has privileges such as adding, updating, or delating seed information, managing user accounts, and generating reports.</p>
+<img src="1.png" width=500 height=500><br>
+<p>the admin adding, updating, or delating seed information, managing user accounts.</p>
+<center><ol><b>view form</b></li></center> 
+    <p>Here admin has access to view all the tables in this system and see what are the incredentials in those table. Let us take example like user_response table( from our database).</p>
+<img src="2.png" width=500 height=500><br><br>
+<center><b> Employee form</i><b></center> 
+<p>Here in employee ensuring the successful development, implementation, and operation 
+Of the system to improve seed management practices in agriculture.</p>
+<img src="3.png" width=500 height=500><br>
+<center><b> login form</i><b></center>
+    <p>form provides a user-friendly interface for users to log in to the seeds management System by entering their email This address and password.</p>
+    <img src="4.png" width=500 height=500><br>
+<center><b> farmer homepage form</i><b></center>
+    <p>This will describe how the home page will look like after login or registration.  It will contain many  button each button will have its functionality .
+</p>
+    <img src="5.png" width=500 height=500><br>
+   
+
+</p>
+    </ol>
+    <marquee><u><i><h2 style="color: orange;">this was Prepared By</i></u>: NDAYISENGA JEAN CLAUDE</h2></marquee>
+    </body></h3>
+    </html>
